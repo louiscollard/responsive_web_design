@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* #small,
+#medium,
+#large {
+	color: black;
+	height: 20px;
+} */
+
+@media only screen and (max-width: 410px) {
+	body {
+		background-color: red;
+	}
+
+	#medium,
+	#large {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 410px) {
+	body {
+		background-color: blue;
+	}
+
+	#small,
+	#large {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		background-color: green;
+	}
+
+	#medium,
+	#small {
+		display: none;
+	}
+
+	#large {
+		display: block;
+	}
+}
